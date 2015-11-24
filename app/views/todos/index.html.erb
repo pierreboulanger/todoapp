@@ -2,18 +2,15 @@
 
 
 <% if @todos.size == 0 %>
-  <p>You have no Todo's. Please add a <%= link_to 'todo', new_todo_path %> </p>
+  <p>You have no Todo's. Please add a <%= link_to 'Todo', new_todo_path %> </p>
 <% else %>
   <% @todos.each do |element| %>
     <h2><%= element.id %> - <%= element.title %></h2>
 
-    <%= link_to 'Check it out', todo_path(element) %>
-    <%= link_to 'Edit', edit_todo_path(element) %>
-    <%= link_to 'Delete', todo_path(element), method: :delete, data: { confirm: 'Are you sure ?' } %>
-    <br>
-    <br>
+    <%= link_to "<i class='fa fa-pencil-square-o'></i>".html_safe, edit_todo_path(element), class: "check" %>
+    <%= link_to "<i class='fa fa-eye'></i>".html_safe, todo_path(element), class: "check" %>
+    <%= link_to "<i class='fa fa-check'></i>".html_safe, todo_path(element), method: :delete, data: { confirm: 'Are you sure ?' }, class: "check" %>
   <% end %>
 <% end %>
 
-
-<p class="add"><%= link_to 'Add a Todo', new_todo_path %></p>
+<p><%= link_to 'Add a Todo', new_todo_path, class: "link add" %></p>

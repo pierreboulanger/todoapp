@@ -16,6 +16,20 @@ h1 {
   font-size: 80px;
 }
 
-.add {
+a {
   font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.check {
+  font-size: 30px;
+}
+
+.add {
+  position: relative;
 }

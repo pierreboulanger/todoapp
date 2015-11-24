@@ -1,0 +1,22 @@
+// Place all the styles related to the Todos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  background: #ff0084; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ff0084 , #33001b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ff0084 , #33001b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.add {
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :production do
   gem 'pg'
-  gem 'rails-12factor'
+  gem 'rails_12factor'
 end
 
 group :development, :test do
@@ -47,7 +47,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'binding_of_caller'
-  gem 'better-errors'
+  gem 'better_errors'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end

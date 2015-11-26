@@ -1,0 +1,17 @@
+<h1>Welcome to your todo list !</h1>
+
+<p><%= link_to 'Add a Task', new_todo_path, class: "link add" %></p>
+<br>
+
+<% if @todos.size == 0 %>
+  <p>You have no Todo's. Please add a <%= link_to 'Todo', new_todo_path %> </p>
+<% else %>
+  <% counter = 1 %>
+  <% @todos.each do |element| %>
+    <h3><%= link_to element.title, todo_path(element), class: "element" %></h3>
+    <% counter += 1 %>
+    <%= link_to "<i class='fa fa-pencil-square-o'></i>".html_safe, edit_todo_path(element), class: "check" %>
+    <%#= link_to "<i class='fa fa-eye'></i>".html_safe, todo_path(element), class: "check" %>
+    <%= link_to "<i class='fa fa-check'></i>".html_safe, todo_path(element), method: :delete, data: { confirm: 'Are you sure ?' }, class: "check" %>
+  <% end %>
+<% end %>

@@ -6,20 +6,25 @@ body {
   color: white;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  background: #ff0084; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #ff0084 , #33001b); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #ff0084 , #33001b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #2980b9 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2980b9 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 40px;
+  padding: 70px;
+}
+
+h3 {
+  padding-top: 20px;
 }
 
 a {
-  font-weight: bold;
   text-decoration: none;
   color: white;
+  font-size: 30px;
 }
 
 a:hover {
@@ -27,9 +32,19 @@ a:hover {
 }
 
 .check {
+  padding: 10px;
+}
+
+.element {
+  opacity: 0.5;
   font-size: 30px;
+  font-weight: normal;
+}
+
+.element:hover {
+  opacity: 1;
 }
 
 .add {
-  position: relative;
+  font-size: 20px;
 }
